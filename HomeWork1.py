@@ -26,12 +26,7 @@ while number > 0:
     number = number // 10
     if number % 10 > max_number:
         max_number = number % 10
-    if number == 9:
-        print('Максимальное число:9')
-        continue
-    else:
-        print('Максимальное число:', max_number)
-        break
+print('Максимальное число:', max_number)
 # Задание 5
 earning = int(input('Введите значение выручки вашей фирмы:'))
 cost = int(input('Введите значение издержки вашей фирмы:'))
@@ -39,7 +34,7 @@ if earning > cost:
     print('Ваша фирма в этом месяце ушла в прибыль!')
     profit = earning - cost
     profitability_of_earning = profit / earning
-    print('Рентабельность выручки составит:', profitability_of_earning)
+    print(f"Рентабельность выручки составит:{profitability_of_earning:.2f}")
     number_of_employee = int(input('Введите количество сотрудников фирмы:'))
     profit_per_employee = profit // number_of_employee
     print('Кол-во прибыли в расчете на одного сотрудника:', profit_per_employee)
@@ -53,5 +48,5 @@ print(day, '-й день:', a)
 while b > a:
     day += 1
     a = a*0.1+a
-    print(day, '-й день:', a)
+    print(day, f"-й день:{a:.2f}")
 print('на', day, '-й день достиг результата - не менее', b, 'км')
