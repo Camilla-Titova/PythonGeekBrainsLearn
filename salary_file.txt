@@ -1,0 +1,4 @@
+Petrov 50000
+Ivanov 15000
+Kozov 20000
+Yakovleva 56000
